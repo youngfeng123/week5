@@ -1,0 +1,32 @@
+<html>
+<head>
+        <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    </br>
+    <h3>
+        <table>
+            <tr>
+                <td>Task Name</td>
+                <td>Due day</td>
+                <td>Description</td>
+            </tr>
+            <% for ( var i =0; i< task.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= task[i].taskName %>
+                    </td>
+                    <td>
+                        <%= task[i].dueDay %>
+                    </td>
+                    <td>
+                        <%= task[i].description %>
+                    </td>
+                </tr>
+                <% }%>
+    </h3>
+    <a href="/">home</a><br>
+    <a href="addNewTask">add new task</a>
+
+</body>
+</html>
